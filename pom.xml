@@ -13,10 +13,10 @@
     <artifactId>portfolio-management-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>AgroTech Portfolio Management System</name>
-    <description>A system is to manage the portfolio data of a company.</description>
+    <description>A system to manage the portfolio data of a company.</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <junit.version>5.8.1</junit.version>
     </properties>
 
