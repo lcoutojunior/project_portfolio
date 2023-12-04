@@ -1,13 +1,12 @@
-package com.agrotech;
+package com.agrotech.portfoliomanagementsystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PortfolioManager {
+public class PortfolioManagementSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PortfolioManager.class, args);
+		SpringApplication.run(PortfolioManagementSystemApplication.class, args);
 	}
-
 }
