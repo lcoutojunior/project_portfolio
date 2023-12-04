@@ -54,6 +54,9 @@ public class ProjectController {
     @GetMapping("/{projectId}")
     public ResponseEntity<Project> getProjectById(@PathVariable Long projectId) {
         Project project = projectService.getProjectById(projectId);
+        if (project == null) {
+            throw new IllegalArgumentException("Project not found");
+        }
         return new ResponseEntity<>(project, HttpStatus.OK);
     }
 
