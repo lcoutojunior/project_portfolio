@@ -8,7 +8,7 @@ import jakarta.transaction.Transactional;
 import java.util.Optional;
 
 public interface MemberRepository extends JpaRepository<Member, Long> {
-    Optional<Member> findByIdProjectIdAndIdPersonId(Long projectId, Long personId);
+    Optional<Member> findByProjectIdAndPersonId(Long projectId, Long personId);
 
     @Transactional
     @Modifying

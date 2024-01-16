@@ -74,7 +74,7 @@ public class ProjectModelTest {
 
         // Mock MemberRepository
         MemberRepository memberRepository = mock(MemberRepository.class);
-        when(memberRepository.findByIdProjectIdAndIdPersonId(memberId.getProjectId(), memberId.getPersonId())).thenReturn(java.util.Optional.of(member));
+        when(memberRepository.findByProjectIdAndPersonId(memberId.getProjectId(), memberId.getPersonId())).thenReturn(java.util.Optional.of(member));
 
         // Mock ProjectService
         ProjectService projectService = new ProjectService(projectRepository, memberRepository);
